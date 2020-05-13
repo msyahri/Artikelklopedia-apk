@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/material.teal-deep_orange.min.css">  
     <link rel="stylesheet" href="css/swipebox.min.css">
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/shareapp.css">
   </head>
 
   <body>
@@ -50,10 +49,8 @@
           </div>
           <!-- Dropdown Menu -->
           <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-menu">
-          <a href="hubungi.html">
-            <li class="mdl-menu__item">Kontak</li> </a>
-			<a href="https://artikelklopedia.blogspot.com" target="_blank">
-			<li class="mdl-menu__item">Kunjungi Website</li>
+          <a href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z" >
+            <li class="mdl-menu__item">Kontak</li>
             </a>
           </ul>
           <!-- Main Navigation -->
@@ -95,15 +92,16 @@
               
   <p>
     <br><br>
-    <center>Versi 1.1 <br><a class="mdl-navigation__link animsition-link" href="help.html"><u>Bantuan ?</u></a></center>	
+    <center>Versi 1.0 <br><a class="mdl-navigation__link animsition-link" href="help.html"><u>Bantuan ?</u></a></center>	
   </p>
-              
-  
+ 
           </nav>
         </div>
 
         <!-- Page Content -->
-        <main class="mdl-layout__content">        
+        <main class="mdl-layout__content">
+
+         
             <div class="calendar-activity now">
            
             </div>
@@ -121,17 +119,44 @@
                 Jika ingin bertanya atau request artikel, jangan sungkan untuk menghubungi kami.
               </p>
               <br>
- 
+              <!DOCTYPE html>
 
 <div class="content">
-<div class="shareapp">
 <center><h5>Bagikan Aplikasi Ini :)</h5></center>
 <p>Sharing is caring, salin link dibawah, dan bagikan ke temanmu.</p>
 <input type="text" id="input" name="taxt" value="Kolom ini hanya bisa dibaca" readonly>
 <br>
 <input type="button" id="button" value="Salin Link">
 </div>
-</div>
+
+<style>
+body {
+font-family:Helvetica, Aria, sans-serif;
+}
+
+h3 {
+font-size: 19px;
+}
+
+input[type="text"]{
+width: 210px;
+padding: 5px;
+font-size: 15px;
+color:steelblue;
+float: center;
+background-color:darkgray;
+}
+
+input[type="button"]{
+border: 0px;
+font-size: 12px;
+color:#fff;
+padding :7px;
+margin-left: 5px;
+cursor: pointer;
+background:rgb(62, 115, 175);
+}
+</style>
 
 <script>
 //copy to clipboard
@@ -140,14 +165,17 @@ document.querySelector("#button").onclick = function() {
 document.querySelector("input").select();
 //Copy to clipboard
 document.execCommand('copy');
-swal("Link Disalin", "Silahkan Bagikan link ke teman Anda", "success");
+alert('Link telah disalin');
 };
+
 </script>
 
 <br>
              <u> &copy; Artikelklopedia</u>
             </center>
 
+
+            
           </div>
 
         </main>
@@ -161,6 +189,5 @@ swal("Link Disalin", "Silahkan Bagikan link ke teman Anda", "success");
     <script src="js/jquery.swipebox.min.js"></script>
     <script src="js/function.js"></script>
     <script src="js/sweet.js"></script>
-	<script src="js/shareapp.js"></script>
   </body>
 </html>

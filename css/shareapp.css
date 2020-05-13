@@ -1,0 +1,29 @@
+<style>
+
+shareapp {
+font-family:Helvetica, Aria, sans-serif;
+}
+
+h3 {
+font-size: 19px;
+}
+
+input[type="text"]{
+width: 210px;
+padding: 5px;
+font-size: 15px;
+color:steelblue;
+float: center;
+background-color:darkgray;
+}
+
+input[type="button"]{
+border: 0px;
+font-size: 12px;
+color:#fff;
+padding :7px;
+margin-left: 5px;
+cursor: pointer;
+background:rgb(62, 115, 175);
+}
+</style>

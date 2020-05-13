@@ -25,41 +25,20 @@
         <header class="mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
             <!-- Title -->
-            <span class="mdl-layout-title">Cari</span>
+            <span class="mdl-layout-title">Pencarian</span>
+            <button class="mdl-button mdl-js-button mdl-button--icon">
+            </button>
             <!-- Spacer -->
             <div class="mdl-layout-spacer"></div>
-             <!-- Right Menu -->
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-              <label class="mdl-button mdl-js-button mdl-button--icon"
-                     for="waterfall-exp">
-                <i class="material-icons">search</i>
-              </label>
-              <div class="mdl-textfield__expandable-holder">
-                <input class="mdl-textfield__input" type="text" name="searchbox"
-                       id="waterfall-exp" onkeypress="handle(event)"  />
-              </div>
-              <script>
-                function handle(e){
-                    if(e.keyCode === 13){
-                        //alert("Enter was pressed was presses");
-                        var query = $("input[name=searchbox]").val();
-                        window.location.href="search.html?q="+query;
-                    }
-
-                    return false;
-                }
-            </script>
-
-            </div>
           </div>
         </header>
+        <!-- Top-right Dropdown Menu -->
         <!-- Sidebar -->
-   <div class="mdl-layout__drawer">
+       <div class="mdl-layout__drawer">
           <!-- Top -->
           <div class="mdl-card mdl-shadow--2dp mdl-color--primary mdl-color-text--blue-grey-50 drawer-profile">
             <div class="mdl-card__title user">
-              <img src="img/artikelklopedia" alt="" />
+              <img src="img/artikelklopedia.png" alt="" />
               <span class="user-name">Artikelklopedia</span>
               <span class="user-mail">"Increase your knowledge"</span>
               <button id="user-menu" class="mdl-button mdl-js-button mdl-button--icon">
@@ -70,33 +49,25 @@
           </div>
           <!-- Dropdown Menu -->
           <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="user-menu">
-          <a href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z" >
-            <li class="mdl-menu__item">Kontak</li>
+          <a href="hubungi.html">
+            <li class="mdl-menu__item">Kontak</li> </a>
+			<a href="https://artikelklopedia.blogspot.com" target="_blank">
+			<li class="mdl-menu__item">Kunjungi Website</li>
             </a>
           </ul>
           <!-- Main Navigation -->
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Home</span></a>
-            <a class="mdl-navigation__link animsition-link" href="https://about.me/m.syahri"><i class="material-icons">account_circle</i><span>Profile</span></a>
+            <a class="mdl-navigation__link animsition-link" href="index.html"><i class="material-icons">home</i><span>Beranda</span></a>
+            <a class="mdl-navigation__link animsition-link" href="about.html"><i class="material-icons">help</i><span>Tentang</span></a>
+
             <div class="mdl-collapse">
-                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">image</i>
+                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">label</i>
                     <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
-                    <span>Gallery</span>
+                    <span>Kategori</span>
                 </a>
                 <div class="mdl-collapse__content-wrapper">
                   <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
-                    <a class="mdl-navigation__link animsition-link" href="masonry.html">Artworks</a>
-                  </div>
-                </div>
-            </div>
-            <div class="mdl-collapse">
-                <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">library_books</i>
-                    <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
-                    <span>Blog</span>
-                </a>
-                <div class="mdl-collapse__content-wrapper">
-                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
-                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Tekno">Tekno</a>
+                    <a class="mdl-navigation__link animsition-link" href="category.html?tag=Teknologi">Tekno</a>
                     <a class="mdl-navigation__link animsition-link" href="category.html?tag=Internet">Internet</a>
                     <a class="mdl-navigation__link animsition-link" href="category.html?tag=Tips Trik">Tips</a>
                     <a class="mdl-navigation__link animsition-link" href="category.html?tag=Tutorial">Tutorial</a>
@@ -104,21 +75,29 @@
                   </div>
                 </div>
             </div>
-            <a class="mdl-navigation__link animsition-link" href="liveupdates.html"><i class="material-icons">queue_music</i><span>Live Updates</span></a>
-            <a class="mdl-navigation__link animsition-link" href="savedlist.html"><i class="material-icons">folder</i><span>Saved Articles</span></a>
+
+            <a class="mdl-navigation__link animsition-link" href="savedlist.html"><i class="material-icons">book</i><span>Artikel Tersimpan</span></a>
             <div class="drawer-separator"></div>
             <div class="mdl-collapse">
                 <a class="mdl-navigation__link mdl-collapse__button"><i class="material-icons">apps</i>
                     <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
-                    <span>App</span>
-                </a>
-                <div class="mdl-collapse__content-wrapper">
-                  <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
-                    <a class="mdl-navigation__link animsition-link" href="https://accounts.google.com/Login">Login</a>
-                    <a class="mdl-navigation__link animsition-link" href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z">Contacts</a>
+                    <span>Menu</span>
+                  </a>
+                  <div class="mdl-collapse__content-wrapper">
+                    <div class="mdl-collapse__content mdl-animation--default" style="margin-top: -156px;">
+                      <a class="mdl-navigation__link animsition-link" href="category.html?tag=Informasi">Informasi</a>
+                      <a class="mdl-navigation__link animsition-link" href="http://www.emailmeform.com/builder/form/aefcut4Uoy6NLmf40z">Hubungi</a>
+                    </div>
                   </div>
-                </div>
-            </div>
+              </div>
+              <a class="mdl-navigation__link animsition-link" href="info.html"><i class="material-icons">info</i><span>Info App</span></a>
+              
+  <p>
+    <br><br>
+    <center>Versi 1.1 <br><a class="mdl-navigation__link animsition-link" href="help.html"><u>Bantuan ?</u></a></center>
+  </p>
+              
+  
           </nav>
         </div>
 
@@ -127,10 +106,10 @@
         <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1"> <!-- first tab -->
 
           <div class="player-featured"> <!-- featured cards -->
-            <p><strong>Result(s)</strong>
+            <p><strong>Hasil :</strong>
             </p>
 
-          <div class="player-featured" id="total_result">&nbsp;&nbsp; &nbsp;No Result</div>
+          <div class="player-featured" id="total_result">&nbsp;&nbsp; &nbsp;Tidak Ada Hasil</div>
             <div class="mdl-grid">
             <script type="text/javascript">
            function getParameterByName(name) {
@@ -150,7 +129,7 @@
               resultnum = json.feed.openSearch$totalResults.$t;
               var postID = postID.substr(postID.indexOf("post-") + 5);
               
-              document.getElementById("total_result").innerHTML= "&nbsp;&nbsp; &nbsp; "+resultnum +" Result(s)";
+              document.getElementById("total_result").innerHTML= "&nbsp;&nbsp; &nbsp; "+resultnum +" Hasil";
 
              if(typeof json.feed.entry[i].media$thumbnail === 'undefined'){
                 thumbImg="images/no-image.jpeg";
