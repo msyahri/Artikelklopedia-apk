@@ -1486,7 +1486,7 @@ jQuery(window).load(function(){
 				icon: 'twitter.png'
 			},
 			rss: {
-				id: 'http://www.davidprasetyo.com/feeds/posts/default?orderby=published',
+				id: 'http://artikelklopedia.blogspot.com/feeds/posts/default?orderby=published',
 				intro: 'Posted',
 				out: 'intro,blogger_thumb,title,text,share',
 				text: 'contentSnippet',
@@ -1516,7 +1516,7 @@ jQuery(window).load(function(){
 			},
 
 			custom_youtube: {
-				id: 'https://www.youtube.com/feeds/videos.xml?user=davidprasetyo19',
+				id: 'https://www.youtube.com/feeds/videos.xml?user=Artikelklopedia',
 				intro: 'Uploaded',
 				out: 'intro,thumb,title,text',
 				icon: 'youtube.png'
